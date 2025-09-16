@@ -1,0 +1,21 @@
+{
+  "name": "eswatini-financial-times",
+  "version": "1.0.0",
+  "description": "Financial news platform for Eswatini",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\" \"npm run dev:admin\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:admin": "cd admin-dashboard && npm run dev",
+    "build": "npm run build:client && npm run build:admin",
+    "build:client": "cd client && npm run build",
+    "build:admin": "cd admin-dashboard && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": ["news", "financial", "eswatini"],
+  "author": "Eswatini Financial Times Team",
+  "license": "MIT"
+}
